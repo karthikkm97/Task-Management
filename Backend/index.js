@@ -1,6 +1,4 @@
 require("dotenv").config();
-
-const config = require("./config.json");
 const mongoose = require("mongoose");
 
 const User = require("./models/user.model");
