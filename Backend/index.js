@@ -5,8 +5,9 @@ const mongoose = require("mongoose");
 
 const User = require("./models/user.model");
 const Note = require("./models/notes.model");
+const connectionString = process.env.MONGO_URL;
 
-mongoose.connect(config.connectionString);
+mongoose.connect(connectionString);
 
 const express = require("express");
 const cors = require("cors");
